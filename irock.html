@@ -2,7 +2,6 @@
 <html>
 <head>
 <meta charset="utf-8";
-<link rel="stylesheet" type="text/css" href="irockstyle.css">
 <title>Virtual iRock</title>
 <script type="text/javascript">
 function touchRock()
@@ -12,15 +11,15 @@ var userName = prompt("Jak masz na imię?", "Wpisz swoje imię");
 if (userName)
  {
 alert("Miło Cię poznać, " + userName + ".");
-document.getElementById(rockImg).src = "rock_happy.png";
+document.getElementById("rockImg").src = "rock_happy.png";
  }
 }
 </script>
 </head>
 
-<body onload="alert('Witaj! Udało ci się mnie ożywić za pomocą Java Script!');">
-<div class="rock">
-<img id="rockimg" src="rock.png" alt="iRock" style="cursor:pointer"
+<body onload = "alert('Witaj! Udało ci się mnie ożywić za pomocą Java Script!');">
+<div style = "margin-top:100px"; text-align:center">
+<img id="rockImg" src="rock.png" alt="iRock" style="cursor:pointer"
  onclick="touchRock();"/>
 
 </div>
